@@ -1,0 +1,36 @@
+{
+  "images": [
+    {
+      "name": "Deep Earth",
+      "image": "/images/desktop/image-deep-earth.jpg"
+    },
+    {
+      "name": "Night Arcade",
+      "image": "/images/desktop/image-night-arcade.jpg"
+    },
+    {
+      "name": "Soccer Team",
+      "image": "/images/desktop/image-soccer-team.jpg"
+    },
+    {
+      "name": "Image Grid",
+      "image": "/images/desktop/image-grid.jpg"
+    },
+    {
+      "name": "From Above",
+      "image": "/images/desktop/image-from-above.jpg"
+    },
+    {
+      "name": "Pocket Borealis",
+      "image": "/images/desktop/image-pocket-borealis.jpg"
+    },
+    {
+      "name": "Curiosity",
+      "image": "/images/desktop/image-curiosity.jpg"
+    },
+    {
+      "name": "Fish Eye",
+      "image": "/images/desktop/image-fisheye.jpg"
+    }
+  ]
+}

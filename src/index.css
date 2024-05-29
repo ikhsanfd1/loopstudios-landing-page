@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.josefin-sans {
+  font-family: 'Josefin Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.alata-regular {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 15px;
+}
+
+.white {
+  color: hsl(0, 0%, 100%);
+}
+
+.black {
+  color: hsl(0, 0%, 0%);
+}
+
+.dark-gray {
+  color: hsl(0, 0%, 55%);
+}
+
+.very-dark-gray {
+  color: hsl(0, 0%, 41%);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s;
+  padding: 16px;
+}
+
+header.scrolled {
+  background: rgba(0, 0, 0, 1); /* Latar belakang lebih gelap saat di-scroll */
+}
+
+.hmb-toggle {
+  display: none;
+  height: 25px;
+  z-index: 2;
+  text-decoration: none;
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 3;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+  gap: 2px;
+  list-style: none;
+  text-align: center;
+}
+
+.main-content {
+  padding-top: 80px; /* Padding agar konten utama tidak tertutup navbar */
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  html {
+    font-size: 70.5%;
+  }
+  .header {
+    justify-content: flex-end;
+  }
+  .hmb-toggle {
+    display: flex;
+    right: 20px;
+    top: 20px;
+  }
+
+  ul {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 98vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: all 0.8s;
+    opacity: 0;
+    background: rgba(0, 0, 0, 1);
+
+  }
+
+  .slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Desktop */
+@media (max-width: 1440px) {
+  /* Desktop */
+}
